@@ -46,6 +46,20 @@
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
+    text-decoration: none;
+  }
+
+  nav ul a li {
+    list-style-type: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  nav ul a {
+    text-decoration: none;
   }
 
   nav ul li {
@@ -78,12 +92,14 @@
     position: fixed;
     top: 35px;
     right: 25px;
+    text-decoration: none;
   }
 
   .link_to_other_page span {
     color: #ffffff;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: none;
   }
   
   video {

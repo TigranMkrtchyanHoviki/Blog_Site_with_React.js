@@ -19,7 +19,7 @@ const Cover = () => {
 
     useEffect(() => {
         document.addEventListener("keydown", (e) => {
-            if(e.key === "Enter"){
+            if (e.key === "Enter") {
                 setShowInput(false)
             }
         })
@@ -35,21 +35,24 @@ const Cover = () => {
                     </div>
                     <nav>
                         <ul>
-                            <a>
+                            <a href="#">
                                 <li>Ինչպես օգտվել</li>
                             </a>
-                            <a>
+                            <a href="#">
                                 <li>Խանութներ</li>
                             </a>
-                            <a>
+                            <a href="#">
                                 <li>Հարցեր</li>
                             </a>
-                            <a>
+                            <a href="#">
                                 <li>Գրանցվել</li>
                             </a>
                         </ul>
 
-                        <a className={`${CoverStyles.link_to_other_page}`}>
+                        <a
+                            href="#"
+                            className={`${CoverStyles.link_to_other_page}`}
+                        >
                             <span>leaf վլոգ</span>
                         </a>
                     </nav>
@@ -76,8 +79,8 @@ const Cover = () => {
                             :
                             ""
                     }
-                    <span 
-                         onDoubleClick={handlerShowInput}>{text}</span>
+                    <span
+                        onDoubleClick={handlerShowInput}>{text}</span>
                     <span>Բլոգ</span>
                 </h3>
 
