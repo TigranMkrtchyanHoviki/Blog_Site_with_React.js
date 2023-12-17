@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.item_container {
+    width: 50%;
+    position: relative;
+}
+
+.item_container > img {
+    width: 100%;
+}
+
+.text_container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    transform: translate(0%, -50%);
+}
+
+.text_container > h3,
+.text_container > p {
+    text-align: center;
+    color: #ffffff;
+}
+
+.text_container > h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.text_container > p {
+    font-size: 23px;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000089;
+    transition: 0.3s;
+}
+
+.item_container:hover .cover {
+    background: #00000073;
+}
+
+.item_container:hover {
+    cursor: pointer;
+}
